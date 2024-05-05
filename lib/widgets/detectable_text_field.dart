@@ -68,10 +68,6 @@ class DetectableTextField extends TextField {
     super.spellCheckConfiguration,
     super.magnifierConfiguration,
   })  : assert(
-          !(regExp != null && controller != null),
-          'Cannot provide both a regExp and a controller. Use a controller to define regExp.\n Example: DetectableTextEditingController(regExp: yourRexExp)',
-        ),
-        assert(
           !(detectedStyle != null && controller != null),
           'Cannot provide both a detectedStyle and a controller. Use a controller to define detectedStyle.\n Example: DetectableTextEditingController(detectedStyle : yourDetectedStyle)',
         ),
